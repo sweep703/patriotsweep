@@ -870,7 +870,7 @@ header {
   justify-content: center;
   justify-items: center;
   border-radius: 35px;
-  padding: 12%;
+  padding: 10%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
@@ -878,7 +878,6 @@ header {
 
 .card-outline {
   /* width: 100%; */
-
   box-shadow: 0px 0px 10px #4b006e;
 }
 
@@ -887,7 +886,7 @@ header {
   justify-content: center;
   padding-left: 50px;
   border: 2px solid #4b006e;
-  width: 50%;
+  width: 100%;
   border-radius: 35px;
   border-top-left-radius: 0;
   margin-bottom: 20px;
@@ -897,6 +896,7 @@ header {
   box-shadow: 0px 0px 10px #4b006e;
   transition-property: width, color;
   transition-duration: 1s;
+  font-size:25px;
 }
 
 .text2 {
@@ -905,32 +905,42 @@ header {
   text-align: right;
   padding-right: 50px;
   border: 2px solid #4b006e;
-  width: 50%;
+  width: 100%;
   border-radius: 35px;
   border-top-right-radius: 0;
   right: -50px;
-  color:#4b006e;
+  color: #4b006e;
   text-shadow: 0px 0px 10px #4b006e;
   box-shadow: 0px 0px 10px #4b006e;
   transition-property: width, color;
   transition-duration: 1s;
+  font-size:25px;
+
 }
 
 .text2:hover {
-  width: 80%;
+  width: 100%;
   box-shadow: 0px 0px 10px #4b006e;
   text-shadow: 0px 0px 10px #4b006e;
   color: rgb(0, 0, 0);
 }
 .text:hover {
-  width: 80%;
+  width: 100%;
   box-shadow: 0px 0px 10px #4b006e;
   text-shadow: 0px 0px 10px #4b006e;
   color: rgb(0, 0, 0);
 }
 
 .card-outline:hover {
-  box-shadow: #4b006e 0px 50px 100px -20px,
-    #4b006e 0px 30px 60px -30px,
+  box-shadow: #4b006e 0px 50px 100px -20px, #4b006e 0px 30px 60px -30px,
     #4b006e 0px -2px 6px 0px inset;
+}
+
+.parent-flex {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+.child-flex {
+  flex: 1;
 }
