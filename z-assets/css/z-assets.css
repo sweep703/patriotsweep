@@ -173,7 +173,7 @@ p.lead {
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 1rem;
     padding-left: 1rem;
-    font-size: 14px;
+    font-size: 16px;
   }
   .navbar-nav > .nav-item > .nav-link.active:after {
     content: "";
@@ -186,6 +186,11 @@ p.lead {
   }
 }
 
+@media (max-width: 767px) {
+  .nav-link {
+      font-size: 226px !important; /* Adjust the font size as needed */
+  }
+}
 @media (max-width: 991px) {
   .navbar-nav.is-scrolling {
     padding-bottom: 1rem;
@@ -730,7 +735,8 @@ a {
 }
 .hero {
   background-image: url("/images/wl.png");
-  object-fit: cover;
+  object-fit: fill;
+  height: auto;
   background-repeat: no-repeat;
 }
 @media (max-width: 992px) {
@@ -884,6 +890,7 @@ header {
 .text {
   align-items: center;
   justify-content: center;
+  text-align: center;
   padding-left: 50px;
   border: 2px solid #4b006e;
   width: 100%;
@@ -902,7 +909,7 @@ header {
 .text2 {
   align-items: center;
   justify-content: center;
-  text-align: right;
+  text-align: center;
   padding-right: 50px;
   border: 2px solid #4b006e;
   width: 100%;
@@ -916,6 +923,9 @@ header {
   transition-duration: 1s;
   font-size:25px;
 
+}
+.text p, .text2 p{
+  line-height: 30px;
 }
 
 .text2:hover {
