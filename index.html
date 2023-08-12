@@ -71,8 +71,7 @@
           <div class="carousel-caption d-none d-md-block">
             <div class="down-content">
               <a href="https://www.facebook.com/profile.php?id=100094956450038" type="button" class="btn  rounded-pill">
-                <h4>Text Us Now <i class="fa fa-facebook bg-primary p-2" aria-hidden="true"></i>
-                </h4>
+                <h4>Join Now</h4>
               </a>
             </div>
           </div>
@@ -80,10 +79,10 @@
         <div class="carousel-item">
           <img class="d-block w-100" src="images/tendoll.png" alt="Second slide">
           <div class="carousel-caption d-none d-md-block">
-            <h1>We got the hottest platforms</h1>
+            <!-- <h1>We got the hottest platforms</h1> -->
             <div class="down-content">
               <a href="https://www.facebook.com/profile.php?id=100094956450038" type="button" class="btn  rounded-pill">
-                <h4>Text Us Now</h4>
+                <h4>Join Now</h4>
               </a>
             </div>
           </div>
@@ -91,10 +90,10 @@
         <div class="carousel-item">
           <img class="d-block w-100" src="images/tendoll.png" alt="Third slide">
           <div class="carousel-caption d-none d-md-block">
-            <h1>We got the hottest platforms</h1>
+            <!-- <h1>We got the hottest platforms</h1> -->
             <div class="down-content">
               <a href="https://www.facebook.com/profile.php?id=100094956450038" type="button" class="btn  rounded-pill">
-                <h4>Text Us Now</h4>
+                <h4>Join Now</h4>
               </a>
             </div>
           </div>
@@ -334,7 +333,7 @@
 
 
   <!-- our rules -->
-  <div class="card-outline bg-black " id="rules" >
+  <div class="card-outline bg-black " id="rules">
     <div class="card-tamp ">
       <h1 class="py-3 text-center" style="color:#4b006e;">Our Rules</h1>
 
@@ -379,11 +378,13 @@
               <i class="fa fa-gift fa-5x fa-icon-image"></i>
               <p class="item-title">
               <h3> Exclusive Offer</h3>
-              <p class="child-flex">
-                Get access to unparalleled benefits, limited-time discounts, and unique perks available only to our
-                loyal customers. Don't miss out on this extraordinary opportunity to elevate your experience with us.
-                Act now before it's gone!"
-              </p>
+              <!-- <span class="child-flex">
+                Get access to unparalleled benefits, limited-time discounts,<span id="dots">...</span> <span
+                  id="more">and unique perks available only to our
+                  loyal customers.Don't miss out on this extraordinary opportunity to elevate your experience with us.
+                  Act now before it's gone!"</span>
+                </p>
+                <button onclick="myFunction()" id="myBtn">Read more</button> -->
             </div>
           </div>
         </div>
@@ -393,11 +394,11 @@
               <i class="fa fa-calendar fa-5x fa-icon-image"></i>
               <p class="item-title">
               <h3> 24/7 Service</h3>
-              <p class="child-flex">
+              <!-- <p class="child-flex">
                 Whether it's day or night, our dedicated team is always
                 here to assist you. Enjoy round-the-clock support, rapid responses, and peace of mind knowing we're
                 available whenever you need us.
-              </p>
+              </p> -->
             </div>
           </div>
         </div>
@@ -407,9 +408,10 @@
               <i class="fa fa-lock fa-5x fa-icon-image"></i>
               <p class="item-title">
               <h3> Secure Payment</h3>
-              <p class="child-flex">
-                We guarantee secure payments. Your financial information is encrypted, ensuring safe transactions and protecting your data. Play with peace of mind and enjoy the thrill of gaming without worries.
-              </p>
+              <!-- <p class="child-flex">
+                We guarantee secure payments. Your financial information is encrypted, ensuring safe transactions and
+                protecting your data. Play with peace of mind and enjoy the thrill of gaming without worries.
+              </p> -->
             </div>
           </div>
         </div>
@@ -433,7 +435,25 @@
   </footer>
   <!-- // end .section -->
 
+  <!-- js script Read more  -->
 
+  <script>
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+      }
+    }
+  </script>
 
 
 

@@ -79,6 +79,10 @@ p.lead {
   color: #d6619c;
 }
 
+#more {
+  display: none;
+}
+
 .btn-primary {
   border-radius: 3px;
   /*  background-image: -moz-linear-gradient( 122deg, #333333 0%, #333333 100%);
@@ -157,6 +161,10 @@ p.lead {
   background-color: #382a1f;
 }
 
+.navbar-dark .navbar-nav .nav-link {
+  font-size: 30px;
+}
+
 .nav-menu.is-scrolling,
 .nav-menu.menu-is-open {
 }
@@ -170,6 +178,10 @@ p.lead {
 }
 
 @media (min-width: 992px) {
+  .navbar-dark .navbar-nav .nav-link {
+    font-size: 30px;
+  }
+
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 1rem;
     padding-left: 1rem;
@@ -188,7 +200,7 @@ p.lead {
 
 @media (max-width: 767px) {
   .nav-link {
-      font-size: 226px !important; /* Adjust the font size as needed */
+    font-size: 226px !important; /* Adjust the font size as needed */
   }
 }
 @media (max-width: 991px) {
@@ -197,6 +209,12 @@ p.lead {
   }
   .navbar-nav .nav-item {
     text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #fff;
+  }
+
+  .navbar-nav .nav-item:last-child {
+    border: none;
   }
 }
 
@@ -227,6 +245,10 @@ header {
   .img-holder {
     padding-bottom: 50%;
   }
+
+  .navbar-dark .navbar-nav .nav-link {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -235,6 +257,10 @@ header {
   }
   .img-holder {
     padding-bottom: 100%;
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    font-size: 30px;
   }
 }
 
@@ -264,6 +290,10 @@ header {
   }
   [class^="col-"]:last-child .card.features {
     margin-bottom: 0;
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    font-size: 35px;
   }
 }
 
@@ -323,6 +353,10 @@ header {
     font-size: 28px;
     line-height: 50px;
   }
+
+  .navbar-dark .navbar-nav .nav-link {
+    font-size: 40px;
+  }
 }
 
 .ui-steps li:hover .circle-icon {
@@ -350,6 +384,10 @@ header {
 @media (min-width: 992px) {
   .perspective-phone {
     margin-top: -150px;
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    font-size: 20px;
   }
 }
 
@@ -803,13 +841,13 @@ header {
 */
 .folded-corner {
   padding: 25px 25px;
+  border-radius: 10px;
   position: relative;
   font-size: 90%;
   text-decoration: none;
   color: #999;
   background: transparent;
   transition: all ease 0.5s;
-  border: 1px solid rgba(31, 181, 172, 0.9);
 }
 .folded-corner:hover {
   background-color: rgba(31, 181, 172, 0.9);
@@ -837,7 +875,8 @@ header {
 }
 
 .service_tab_1 {
-  background-color: #2c2727;
+  background: #fff;
+  width: 100%;
 }
 .service_tab_1:hover .fa-icon-image {
   color: #000;
@@ -867,6 +906,8 @@ header {
 .texts h3 {
   display: flex;
   justify-content: center;
+  color: #000;
+  text-align: center;
 }
 
 /* rules */
@@ -876,7 +917,7 @@ header {
   justify-content: center;
   justify-items: center;
   border-radius: 35px;
-  padding: 10%;
+  padding: 100px 0;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
@@ -903,7 +944,7 @@ header {
   box-shadow: 0px 0px 10px #4b006e;
   transition-property: width, color;
   transition-duration: 1s;
-  font-size:25px;
+  font-size: 25px;
 }
 
 .text2 {
@@ -921,20 +962,22 @@ header {
   box-shadow: 0px 0px 10px #4b006e;
   transition-property: width, color;
   transition-duration: 1s;
-  font-size:25px;
-
+  font-size: 25px;
 }
-.text p, .text2 p{
+.text p,
+.text2 p {
   line-height: 30px;
 }
 
 .text2:hover {
+  background: #4b006e;
   width: 100%;
   box-shadow: 0px 0px 10px #4b006e;
   text-shadow: 0px 0px 10px #4b006e;
   color: rgb(0, 0, 0);
 }
 .text:hover {
+  background: #4b006e;
   width: 100%;
   box-shadow: 0px 0px 10px #4b006e;
   text-shadow: 0px 0px 10px #4b006e;
