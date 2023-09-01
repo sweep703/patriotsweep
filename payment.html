@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <!-- Primary Meta Tags -->
+        <link href="images/patroitslogo.jpeg" type="image/x-icon" rel="icon" />
+        <link href="images/patroitslogo.jpeg" type="image/x-icon" rel="shortcut icon" />
+        <title> Patriot Sweep</title>
+      
+        <!-- Main css -->
+        <link href="z-assets/css/z-assets.css" rel="stylesheet">
+        
+        <script>
+            $("#photos").change(function(){
+                _data_image = $('option:selected',this).data('image');
+                $('.active').removeClass('active');
+                $(_data_image).addClass('active');
+                
+                });
+        </script>
+        
+      </head>
+      <body>
+        <div class="payment">
+            <div class="col">
+                <select id="photos">
+                    <option value="photo-1" data-image="#opt-1" selected> Image 1</option>
+                    <option value="photo-2" data-image="#opt-2"> Image 2</option>
+                    <option value="photo-3" data-image="#opt-3"> Image 3</option>
+                </select>    
+            </div>
+            <div class="col">
+              <img src="images/cashfrenzy.jpeg" id="opt-1" class="active">
+              <img src="images/firekirrin.jpeg" id="opt-2">
+              <img src="images/75.jpeg" id="opt-3">
+            </div>
+        </div>
+      </body>
+</html>
