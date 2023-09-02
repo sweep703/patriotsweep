@@ -680,7 +680,8 @@ footer p a:hover {
 .down-content .btn {
   font-weight: 500;
   letter-spacing: 2px;
-  background-image: linear-gradient(180deg, #f3ec78, #aa5a70);
+  /* background-image: linear-gradient(180deg, #f3ec78, #aa5a70); */
+  background-color: #1f2a42;
   color: white !important;
   padding: 5px 15px;
 }
