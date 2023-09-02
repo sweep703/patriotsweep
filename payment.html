@@ -8,14 +8,7 @@
         <!-- Main css -->
         <link href="z-assets/css/z-assets.css" rel="stylesheet">
         
-        <script>
-            $("#photos").change(function(){
-                _data_image = $('option:selected',this).data('image');
-                $('.active').removeClass('active');
-                $(_data_image).addClass('active');
-                
-                });
-        </script>
+    
         
       </head>
       <body>
@@ -33,5 +26,13 @@
               <img src="images/75.jpeg" id="opt-3">
             </div>
         </div>
+        <script>
+          $("#photos").change(function(){
+              _data_image = $('option:selected',this).data('image');
+              $('.active').removeClass('active');
+              $(_data_image).addClass('active');
+              
+              });
+      </script>
       </body>
 </html>

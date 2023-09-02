@@ -8,12 +8,12 @@ body {
 }
 
 a {
-  color: #a369be;
+  color: #777efd !important;
 }
 
 a:hover,
 a:focus {
-  color: #a369be;
+  color: #fef400;
 }
 
 h1 {
@@ -21,18 +21,19 @@ h1 {
   font-weight: 300;
   letter-spacing: -1px;
   margin-bottom: 1.5rem;
+  color: #fef400 !important;
 }
 
 h2 {
   font-size: 45px;
   font-weight: 300;
-  color: white;
+  color:#fee400;
   letter-spacing: -1px;
   margin-bottom: 1rem;
 }
 
 h3 {
-  color: #a369be;
+  color: #fef400;
   font-size: 33px;
   font-weight: 500;
 }
@@ -40,13 +41,13 @@ h3 {
 h4 {
   font-size: 20px;
   font-weight: 500;
-  color: white;
+  color: #fee400;
 }
 
 h5 {
   font-size: 28px;
   font-weight: 300;
-  color: #a369be;
+  color: #fef400;
   margin-bottom: 0.7rem;
 }
 
@@ -55,12 +56,12 @@ p {
 }
 
 p.lead {
-  color: #a369be;
+  color: #fef400;
   margin-bottom: 2rem;
 }
 
 .text-primary {
-  color: #a369be !important;
+  color: #fef400 !important;
 }
 
 .light-font {
@@ -634,20 +635,20 @@ header {
 
 /* footer */
 footer {
-  background-color: #4b006e;
+  background-color: #777efd;
 }
 
 footer p {
   text-align: center;
   line-height: 5px;
-  color: #fff;
+  color: #fef400 !important;
   font-size: 16px;
   font-weight: 400;
   margin: 0;
 }
 
 footer p a {
-  color: #fff;
+  color: #fef400 !important;
   transition: all 0.3s;
   position: relative;
   z-index: 3;
@@ -680,7 +681,7 @@ footer p a:hover {
 .down-content .btn {
   font-weight: 500;
   letter-spacing: 2px;
-  background-image: linear-gradient(180deg, #f3ec78, #aa5a70);
+  background-color: #730ec3;
   color: white !important;
   padding: 5px 15px;
 }
@@ -691,7 +692,7 @@ a:hover {
 
 /* Payment Page */
 
-.payment{
+.payment {
   display: flex;
   align-items: center;
 
@@ -769,7 +770,6 @@ a:hover {
     opacity: 1;
   }
 }
-
 
 /* our services */
 section {
@@ -872,12 +872,11 @@ a {
     background-repeat: no-repeat;
   }
 
-  .texts{
+  .texts {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
 }
 
 #myVideo {
@@ -963,12 +962,12 @@ header {
   border-color: #eee #000;
 }
 
-.coins{
+.coins {
   text-align: center;
   margin-top: 20px;
 }
 
-.coins h2{
+.coins h2 {
   margin-bottom: 20px;
 }
 
@@ -1023,7 +1022,7 @@ header {
 
 .card-outline {
   /* width: 100%; */
-  box-shadow: 0px 0px 10px #4b006e;
+  box-shadow: 0px 0px 10px #fee400;
 }
 
 .text {
@@ -1031,10 +1030,10 @@ header {
   justify-content: center;
   text-align: center;
   padding-left: 50px;
-  border: 2px solid #4b006e;
+  border: 2px solid #fee400;
   width: 100%;
   border-radius: 35px;
-  background: #4b006e;
+  /* background: #4b006e; */
   /* border-top-left-radius: 0; */
   margin-bottom: 20px;
   margin-top: 20px;
@@ -1051,7 +1050,7 @@ header {
   justify-content: center;
   text-align: center;
   padding-right: 50px;
-  border: 2px solid #4b006e;
+  border: 2px solid #fee400;
   width: 100%;
   border-radius: 35px;
   right: -50px;
@@ -1068,17 +1067,17 @@ header {
 }
 
 .text2:hover {
-  background: #4b006e;
+  background: #6f76ff;
   width: 100%;
-  box-shadow: 0px 0px 10px #4b006e;
-  text-shadow: 0px 0px 10px #4b006e;
+  box-shadow: 0px 0px 10px #6f76ff;
+  text-shadow: 0px 0px 10px #6f76ff;
   color: rgb(0, 0, 0);
 }
 .text:hover {
-  background: #4b006e;
+  background: #6f76ff;
   width: 100%;
-  box-shadow: 0px 0px 10px #4b006e;
-  text-shadow: 0px 0px 10px #4b006e;
+  box-shadow: 0px 0px 10px #6f76ff;
+  text-shadow: 0px 0px 10px #6f76ff;
   color: rgb(0, 0, 0);
 }
 
