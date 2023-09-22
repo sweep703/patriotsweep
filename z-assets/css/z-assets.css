@@ -998,3 +998,24 @@ header {
 .child-flex {
   flex: 1;
 }
+
+
+
+/* testimonials */
+.owl-carousel .owl-item {
+  transition: all 0.3s ease-in-out;
+}
+
+.owl-carousel .owl-item .card {
+  padding: 30px;
+  position: relative;
+}
+
+.owl-carousel .owl-stage-outer {
+  overflow-y: auto !important;
+  padding-bottom: 40px;
+}
+
+.name{
+  font-size: 20px;
+}

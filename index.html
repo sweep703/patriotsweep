@@ -131,7 +131,8 @@
             <img class="img-fluid rounded-circle" src="images/logo.png" />
             <div class="down-content">
               <button type="button" class="btn  rounded-pill">
-                <h4><i style="color: white; font-size:29px" class="fa  fa-facebook-square"></i>&nbsp;Page Link&nbsp;<i style="color: white; font-size:29px" class="fa  fa-facebook-square"></i></h4>
+                <h4><i style="color: white; font-size:29px" class="fa  fa-facebook-square"></i>&nbsp;Page Link&nbsp;<i
+                    style="color: white; font-size:29px" class="fa  fa-facebook-square"></i></h4>
               </button>
             </div>
           </a>
@@ -161,7 +162,7 @@
             </div>
           </a>
         </div>
- 
+
 
 
 
@@ -177,7 +178,7 @@
           </a>
         </div>
 
-   
+
         <!-- milky way -->
         <div class="col-lg-3 col-md-4 col-sm-4 my-4 px-5">
           <a href="https://milkywayapp.xyz/" target="_blank">
@@ -237,47 +238,6 @@
   </div>
   <!-- // end .section -->
 
-  <!-- our services -->
-  <!-- <section id="about" style="background-color: rgb(171, 151, 180);">
-    <div class="container-fluid">
-      <h2 class="text-center my-4 bold"> Our Services</h2>
-      <div class="row justify-content-center">
-        <div class="col-lg-4 col-md-4 col-sm-4 ">
-          <div class="wrap">
-            <div class="ico-wrap ">
-              <span class="mbr-iconfont fa-gift fa"></span>
-            </div>
-            <div class="text-wrap vcenter ml-3">
-              <h2>Exclusive Offer </h2>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 ">
-          <div class="wrap">
-            <div class="ico-wrap ">
-              <span class="mbr-iconfont fa-calendar fa"></span>
-            </div>
-            <div class="text-wrap vcenter ml-0">
-              <h2>24/7 Service</h2>
-
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 ">
-          <div class="wrap">
-            <div class="ico-wrap  ">
-              <span class="mbr-iconfont fa-lock fa"></span>
-            </div>
-            <div class="text-wrap vcenter ">
-              <h2>Secure Payment</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-
 
   <!-- our rules -->
   <div class="card-outline bg-black  " id="rules">
@@ -307,6 +267,77 @@
       </div>
       <div class="text2">
         <p> Below $20 Have Max Cashout Limit Of 10X Times The Deposit Amount Rest Will Be Voided</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- testimonials -->
+  <div class="owl-carousel owl-theme mt-5">
+    <div class="owl-item">
+      <div class="card parent-flex">
+        <div class="img-card">
+          <img class="img-fluid rounded-circle" src="images/girl1.jpg" alt="">
+        </div>
+        <div class="testimonial mt-4 mb-2 child-flex">
+          I appreciate the fairness and reliability of this gaming site. It ensures a level playing field, and the
+          excitement of winning big is always just a spin away.
+        </div>
+        <div class="name">
+          Denis Richie
+        </div>
+      </div>
+    </div>
+    <div class="owl-item ">
+      <div class="card parent-flex">
+        <div class="img-card">
+          <img class="img-fluid rounded-circle" src="images/girl2.jpg" alt="">
+        </div>
+        <div class="testimonial mt-4 mb-2 child-flex">
+          If you're a fan of chasing jackpots, this platform is perfect. I've had some amazing wins here, and the
+          process of cashing out your winnings is seamless.
+        </div>
+        <div class="name">
+          Lisa Sthalekar
+        </div>
+      </div>
+    </div>
+    <div class="owl-item ">
+      <div class="card parent-flex">
+        <div class="img-card">
+          <img class="img-fluid rounded-circle" src="images/girls3.jpg" alt="">
+        </div>
+        <div class="testimonial mt-4 mb-2 child-flex">
+          For an exceptional gaming experience, look no further. This gaming platform offers top-notch entertainment for both casual and serious gamers alike.
+        </div>
+        <div class="name">
+          Elizabith Richie
+        </div>
+      </div>
+    </div>
+    <div class="owl-item ">
+      <div class="card parent-flex">
+        <div class="img-card">
+          <img class="img-fluid rounded-circle" src="images/boy1.jfif" alt="">
+        </div>
+        <div class="testimonial mt-4 mb-2 child-flex">
+          The bonuses and promotions on this gaming platform add an extra layer of excitement to the experience. It's a great place to have fun and potentially win big.
+        </div>
+        <div class="name">
+          Daniel Xavier
+        </div>
+      </div>
+    </div>
+    <div class="owl-item ">
+      <div class="card parent-flex">
+        <div class="img-card">
+          <img class="img-fluid rounded-circle" src="images/boy2.jpg" alt="">
+        </div>
+        <div class="testimonial mt-4 mb-2 child-flex">
+          This online gaming platform offers an endless array of games to enjoy. Whether you're into slots, table games, or live dealers, you'll find something to keep you entertained for hours.
+        </div>
+        <div class="name">
+          Shane Watson
+        </div>
       </div>
     </div>
   </div>
@@ -383,6 +414,7 @@
   <!-- // end .section -->
 
   <!-- js script Read more  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
 
   <script>
     function myFunction() {
@@ -413,6 +445,31 @@
       $('.wining-up').show();
     }, 10000);
   </script> -->
+  <script>
+    $(document).ready(function () {
+      var silder = $(".owl-carousel");
+      silder.owlCarousel({
+        autoplay: true,
+        autoplayTimeout: 1000,
+        autoplayHoverPause: false,
+        items: 1,
+        stagePadding: 20,
+        center: true,
+        nav: false,
+        margin: 50,
+        dots: true,
+        loop: true,
+        responsive: {
+          0: { items: 1 },
+          480: { items: 2 },
+          575: { items: 2 },
+          768: { items: 2 },
+          991: { items: 3 },
+          1200: { items: 4 }
+        }
+      });
+    });
+  </script>
 
   <script src="z-assets/js/bootstrap.bundle.min.js"></script>
   <!-- Plugins JS -->
