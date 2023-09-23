@@ -271,76 +271,53 @@
     </div>
   </div>
 
-  <!-- testimonials -->
-  <div class="owl-carousel owl-theme mt-5">
-    <div class="owl-item">
-      <div class="card parent-flex">
-        <div class="img-card">
-          <img class="img-fluid rounded-circle" src="images/girl1.jpg" alt="">
-        </div>
-        <div class="testimonial mt-4 mb-2 child-flex">
-          I appreciate the fairness and reliability of this gaming site. It ensures a level playing field, and the
-          excitement of winning big is always just a spin away.
-        </div>
-        <div class="name">
-          Denis Richie
-        </div>
+<!-- testimonals -->
+<section id="testim" class=" container-fluid testim ">
+  <div class="wrap">
+    <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+    <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
+    <ul id="testim-dots" class="dots">
+      <li class="dot active"></li>
+      <li class="dot"></li>
+      <li class="dot"></li>
+      <li class="dot"></li>
+      <li class="dot"></li>
+    </ul>
+    <div id="testim-content" class="cont">
+
+      <div class="active">
+        <div class="img"><img src="images/user.png" alt=""></div>
+        <h2> Denis Richie
+        </h2>
+        <p> I appreciate the fairness and reliability of this gaming site. It ensures a level playing field, and the  excitement of winning big is always just a spin away..</p>
       </div>
-    </div>
-    <div class="owl-item ">
-      <div class="card parent-flex">
-        <div class="img-card">
-          <img class="img-fluid rounded-circle" src="images/girl2.jpg" alt="">
-        </div>
-        <div class="testimonial mt-4 mb-2 child-flex">
-          If you're a fan of chasing jackpots, this platform is perfect. I've had some amazing wins here, and the
-          process of cashing out your winnings is seamless.
-        </div>
-        <div class="name">
-          Lisa Sthalekar
-        </div>
+
+      <div>
+        <div class="img"><img src="images/user.png" alt=""></div>
+        <h2>Lisa Sthalekar</h2>
+        <p>If you're a fan of chasing jackpots, this platform is perfect. I've had some amazing wins here, and the  process of cashing out your winnings is seamless.</p>
       </div>
-    </div>
-    <div class="owl-item ">
-      <div class="card parent-flex">
-        <div class="img-card">
-          <img class="img-fluid rounded-circle" src="images/girls3.jpg" alt="">
-        </div>
-        <div class="testimonial mt-4 mb-2 child-flex">
-          For an exceptional gaming experience, look no further. This gaming platform offers top-notch entertainment for both casual and serious gamers alike.
-        </div>
-        <div class="name">
-          Elizabith Richie
-        </div>
+
+      <div>
+        <div class="img"><img src="images/user.png" alt=""></div>
+        <h2> Daniel Xavier </h2>
+        <p>The bonuses and promotions on this gaming platform add an extra layer of excitement to the experience. It's a great place to have fun and potentially win big.</p>
       </div>
-    </div>
-    <div class="owl-item ">
-      <div class="card parent-flex">
-        <div class="img-card">
-          <img class="img-fluid rounded-circle" src="images/boy1.jfif" alt="">
-        </div>
-        <div class="testimonial mt-4 mb-2 child-flex">
-          The bonuses and promotions on this gaming platform add an extra layer of excitement to the experience. It's a great place to have fun and potentially win big.
-        </div>
-        <div class="name">
-          Daniel Xavier
-        </div>
+
+      <div>
+        <div class="img"><img src="images/user.png" alt=""></div>
+        <h2>Elizabith Richie</h2>
+        <p>For an exceptional gaming experience, look no further. This gaming platform offers top-notch entertainment for both casual and serious gamers alike.</p>
       </div>
-    </div>
-    <div class="owl-item ">
-      <div class="card parent-flex">
-        <div class="img-card">
-          <img class="img-fluid rounded-circle" src="images/boy2.jpg" alt="">
-        </div>
-        <div class="testimonial mt-4 mb-2 child-flex">
-          This online gaming platform offers an endless array of games to enjoy. Whether you're into slots, table games, or live dealers, you'll find something to keep you entertained for hours.
-        </div>
-        <div class="name">
-          Shane Watson
-        </div>
+
+      <div>
+        <div class="img"><img src="images/user.png" alt=""></div>
+        <h2>Shane Watson</h2>
+        <p> This online gaming platform offers an endless array of games to enjoy. Whether you're into slots, table  games, or live dealers, you'll find something to keep you entertained for hours.</p>
       </div>
     </div>
   </div>
+</section>
 
 
 
@@ -433,6 +410,118 @@
       }
     }
   </script>
+
+<script>
+  // vars
+  'use strict'
+  var testim = document.getElementById("testim"),
+    testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
+    testimContent = Array.prototype.slice.call(document.getElementById("testim-content").children),
+    testimLeftArrow = document.getElementById("left-arrow"),
+    testimRightArrow = document.getElementById("right-arrow"),
+    testimSpeed = 4500,
+    currentSlide = 0,
+    currentActive = 0,
+    testimTimer,
+    touchStartPos,
+    touchEndPos,
+    touchPosDiff,
+    ignoreTouch = 30;
+  ;
+
+  window.onload = function () {
+
+    // Testim Script
+    function playSlide(slide) {
+      for (var k = 0; k < testimDots.length; k++) {
+        testimContent[k].classList.remove("active");
+        testimContent[k].classList.remove("inactive");
+        testimDots[k].classList.remove("active");
+      }
+
+      if (slide < 0) {
+        slide = currentSlide = testimContent.length - 1;
+      }
+
+      if (slide > testimContent.length - 1) {
+        slide = currentSlide = 0;
+      }
+
+      if (currentActive != currentSlide) {
+        testimContent[currentActive].classList.add("inactive");
+      }
+      testimContent[slide].classList.add("active");
+      testimDots[slide].classList.add("active");
+
+      currentActive = currentSlide;
+
+      clearTimeout(testimTimer);
+      testimTimer = setTimeout(function () {
+        playSlide(currentSlide += 1);
+      }, testimSpeed)
+    }
+
+    testimLeftArrow.addEventListener("click", function () {
+      playSlide(currentSlide -= 1);
+    })
+
+    testimRightArrow.addEventListener("click", function () {
+      playSlide(currentSlide += 1);
+    })
+
+    for (var l = 0; l < testimDots.length; l++) {
+      testimDots[l].addEventListener("click", function () {
+        playSlide(currentSlide = testimDots.indexOf(this));
+      })
+    }
+
+    playSlide(currentSlide);
+
+    // keyboard shortcuts
+    document.addEventListener("keyup", function (e) {
+      switch (e.keyCode) {
+        case 37:
+          testimLeftArrow.click();
+          break;
+
+        case 39:
+          testimRightArrow.click();
+          break;
+
+        case 39:
+          testimRightArrow.click();
+          break;
+
+        default:
+          break;
+      }
+    })
+
+    testim.addEventListener("touchstart", function (e) {
+      touchStartPos = e.changedTouches[0].clientX;
+    })
+
+    testim.addEventListener("touchend", function (e) {
+      touchEndPos = e.changedTouches[0].clientX;
+
+      touchPosDiff = touchStartPos - touchEndPos;
+
+      console.log(touchPosDiff);
+      console.log(touchStartPos);
+      console.log(touchEndPos);
+
+
+      if (touchPosDiff > 0 + ignoreTouch) {
+        testimLeftArrow.click();
+      } else if (touchPosDiff < 0 - ignoreTouch) {
+        testimRightArrow.click();
+      } else {
+        return;
+      }
+
+    })
+  }
+</script>
 
 
 
