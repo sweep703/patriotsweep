@@ -1586,8 +1586,25 @@ header {
 
 /* Sticky button */
 
+.borders {
+  background: linear-gradient(
+    to right,
+    /* #fff 20%, */
+    /* #fff 40%, */
+    #ecd08c 50%,
+    #ecd08c 55%,
+    #fff 70%,
+    #fff 100%
+  );
+  background-size: 200% auto;
+  animation: shine 5s linear infinite;
+  border-radius: 50%;
+}
 
+/*Begin shimmer code*/
 
-
-
-
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
