@@ -69,6 +69,8 @@
 
 
 
+
+
   <!-- Hottest game -->
   <div class="section  platform hero" id="download">
     <div class="container-fluid px-5">
@@ -95,7 +97,6 @@
               <button type="button" class="btn  rounded-pill">
                 <h4>JUWA city</h4>
               </button>
-
             </div>
           </a>
         </div>
@@ -271,53 +272,58 @@
     </div>
   </div>
 
-<!-- testimonals -->
-<section id="testim" class=" container-fluid testim ">
-  <div class="wrap">
-    <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
-    <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
-    <ul id="testim-dots" class="dots">
-      <li class="dot active"></li>
-      <li class="dot"></li>
-      <li class="dot"></li>
-      <li class="dot"></li>
-      <li class="dot"></li>
-    </ul>
-    <div id="testim-content" class="cont">
+  <!-- testimonals -->
+  <section id="testim" class=" container-fluid testim ">
+    <div class="wrap">
+      <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+      <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
+      <ul id="testim-dots" class="dots">
+        <li class="dot active"></li>
+        <li class="dot"></li>
+        <li class="dot"></li>
+        <li class="dot"></li>
+        <li class="dot"></li>
+      </ul>
+      <div id="testim-content" class="cont">
 
-      <div class="active">
-        <div class="img"><img src="images/user.png" alt=""></div>
-        <h2> Denis Richie
-        </h2>
-        <p> I appreciate the fairness and reliability of this gaming site. It ensures a level playing field, and the  excitement of winning big is always just a spin away..</p>
-      </div>
+        <div class="active">
+          <div class="img"><img src="images/user.png" alt=""></div>
+          <h2> Denis Richie
+          </h2>
+          <p> I appreciate the fairness and reliability of this gaming site. It ensures a level playing field, and the
+            excitement of winning big is always just a spin away..</p>
+        </div>
 
-      <div>
-        <div class="img"><img src="images/user.png" alt=""></div>
-        <h2>Lisa Sthalekar</h2>
-        <p>If you're a fan of chasing jackpots, this platform is perfect. I've had some amazing wins here, and the  process of cashing out your winnings is seamless.</p>
-      </div>
+        <div>
+          <div class="img"><img src="images/user.png" alt=""></div>
+          <h2>Lisa Sthalekar</h2>
+          <p>If you're a fan of chasing jackpots, this platform is perfect. I've had some amazing wins here, and the
+            process of cashing out your winnings is seamless.</p>
+        </div>
 
-      <div>
-        <div class="img"><img src="images/user.png" alt=""></div>
-        <h2> Daniel Xavier </h2>
-        <p>The bonuses and promotions on this gaming platform add an extra layer of excitement to the experience. It's a great place to have fun and potentially win big.</p>
-      </div>
+        <div>
+          <div class="img"><img src="images/user.png" alt=""></div>
+          <h2> Daniel Xavier </h2>
+          <p>The bonuses and promotions on this gaming platform add an extra layer of excitement to the experience. It's
+            a great place to have fun and potentially win big.</p>
+        </div>
 
-      <div>
-        <div class="img"><img src="images/user.png" alt=""></div>
-        <h2>Elizabith Richie</h2>
-        <p>For an exceptional gaming experience, look no further. This gaming platform offers top-notch entertainment for both casual and serious gamers alike.</p>
-      </div>
+        <div>
+          <div class="img"><img src="images/user.png" alt=""></div>
+          <h2>Elizabith Richie</h2>
+          <p>For an exceptional gaming experience, look no further. This gaming platform offers top-notch entertainment
+            for both casual and serious gamers alike.</p>
+        </div>
 
-      <div>
-        <div class="img"><img src="images/user.png" alt=""></div>
-        <h2>Shane Watson</h2>
-        <p> This online gaming platform offers an endless array of games to enjoy. Whether you're into slots, table  games, or live dealers, you'll find something to keep you entertained for hours.</p>
+        <div>
+          <div class="img"><img src="images/user.png" alt=""></div>
+          <h2>Shane Watson</h2>
+          <p> This online gaming platform offers an endless array of games to enjoy. Whether you're into slots, table
+            games, or live dealers, you'll find something to keep you entertained for hours.</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
 
@@ -374,6 +380,26 @@
     </div>
   </section>
 
+  <!-- <section class="call-buton">
+    <a class="cc-calto-action-ripple" href="tel:9999999"><i class="fa fa-phone"></i><span
+        class="num">Whatsapp</span>
+    </a>
+    <a class="cc-calto-action-ripples" href="tel:9999999"><i class="fa fa-phone"></i><span
+        class="num">telegram</span>
+    </a>
+  </section> -->
+
+  <ul class="sticky_contact" style="position: fixed; bottom: 20px ; right: 10px; list-style: none;display: none;"> 
+    <a href="https://t.me/Patriots_sweep">
+
+      <li style="margin-bottom: 15px;"><img src="images/telegram.png" alt=""  style="height: 80px; width: 80px; "></li>
+    </a>
+    <a href="">
+
+      <li><img src="images/whatasapp.png" alt=""  style="height: 80px; width: 80px;"></li>
+    </a>
+  </ul>
+
 
 
   <!-- footer -->
@@ -388,6 +414,7 @@
       </div>
     </div>
   </footer>
+
   <!-- // end .section -->
 
   <!-- js script Read more  -->
@@ -411,117 +438,118 @@
     }
   </script>
 
-<script>
-  // vars
-  'use strict'
-  var testim = document.getElementById("testim"),
-    testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
-    testimContent = Array.prototype.slice.call(document.getElementById("testim-content").children),
-    testimLeftArrow = document.getElementById("left-arrow"),
-    testimRightArrow = document.getElementById("right-arrow"),
-    testimSpeed = 4500,
-    currentSlide = 0,
-    currentActive = 0,
-    testimTimer,
-    touchStartPos,
-    touchEndPos,
-    touchPosDiff,
-    ignoreTouch = 30;
-  ;
+  <script>
+    // vars
+    'use strict'
+    var testim = document.getElementById("testim"),
+      testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
+      testimContent = Array.prototype.slice.call(document.getElementById("testim-content").children),
+      testimLeftArrow = document.getElementById("left-arrow"),
+      testimRightArrow = document.getElementById("right-arrow"),
+      testimSpeed = 4500,
+      currentSlide = 0,
+      currentActive = 0,
+      testimTimer,
+      touchStartPos,
+      touchEndPos,
+      touchPosDiff,
+      ignoreTouch = 30;
+    ;
 
-  window.onload = function () {
+    window.onload = function () {
 
-    // Testim Script
-    function playSlide(slide) {
-      for (var k = 0; k < testimDots.length; k++) {
-        testimContent[k].classList.remove("active");
-        testimContent[k].classList.remove("inactive");
-        testimDots[k].classList.remove("active");
+      // Testim Script
+      function playSlide(slide) {
+        for (var k = 0; k < testimDots.length; k++) {
+          testimContent[k].classList.remove("active");
+          testimContent[k].classList.remove("inactive");
+          testimDots[k].classList.remove("active");
+        }
+
+        if (slide < 0) {
+          slide = currentSlide = testimContent.length - 1;
+        }
+
+        if (slide > testimContent.length - 1) {
+          slide = currentSlide = 0;
+        }
+
+        if (currentActive != currentSlide) {
+          testimContent[currentActive].classList.add("inactive");
+        }
+        testimContent[slide].classList.add("active");
+        testimDots[slide].classList.add("active");
+
+        currentActive = currentSlide;
+
+        clearTimeout(testimTimer);
+        testimTimer = setTimeout(function () {
+          playSlide(currentSlide += 1);
+        }, testimSpeed)
       }
 
-      if (slide < 0) {
-        slide = currentSlide = testimContent.length - 1;
-      }
+      testimLeftArrow.addEventListener("click", function () {
+        playSlide(currentSlide -= 1);
+      })
 
-      if (slide > testimContent.length - 1) {
-        slide = currentSlide = 0;
-      }
-
-      if (currentActive != currentSlide) {
-        testimContent[currentActive].classList.add("inactive");
-      }
-      testimContent[slide].classList.add("active");
-      testimDots[slide].classList.add("active");
-
-      currentActive = currentSlide;
-
-      clearTimeout(testimTimer);
-      testimTimer = setTimeout(function () {
+      testimRightArrow.addEventListener("click", function () {
         playSlide(currentSlide += 1);
-      }, testimSpeed)
-    }
+      })
 
-    testimLeftArrow.addEventListener("click", function () {
-      playSlide(currentSlide -= 1);
-    })
+      for (var l = 0; l < testimDots.length; l++) {
+        testimDots[l].addEventListener("click", function () {
+          playSlide(currentSlide = testimDots.indexOf(this));
+        })
+      }
 
-    testimRightArrow.addEventListener("click", function () {
-      playSlide(currentSlide += 1);
-    })
+      playSlide(currentSlide);
 
-    for (var l = 0; l < testimDots.length; l++) {
-      testimDots[l].addEventListener("click", function () {
-        playSlide(currentSlide = testimDots.indexOf(this));
+      // keyboard shortcuts
+      document.addEventListener("keyup", function (e) {
+        switch (e.keyCode) {
+          case 37:
+            testimLeftArrow.click();
+            break;
+
+          case 39:
+            testimRightArrow.click();
+            break;
+
+          case 39:
+            testimRightArrow.click();
+            break;
+
+          default:
+            break;
+        }
+      })
+
+      testim.addEventListener("touchstart", function (e) {
+        touchStartPos = e.changedTouches[0].clientX;
+      })
+
+      testim.addEventListener("touchend", function (e) {
+        touchEndPos = e.changedTouches[0].clientX;
+
+        touchPosDiff = touchStartPos - touchEndPos;
+
+        console.log(touchPosDiff);
+        console.log(touchStartPos);
+        console.log(touchEndPos);
+
+
+        if (touchPosDiff > 0 + ignoreTouch) {
+          testimLeftArrow.click();
+        } else if (touchPosDiff < 0 - ignoreTouch) {
+          testimRightArrow.click();
+        } else {
+          return;
+        }
+
       })
     }
-
-    playSlide(currentSlide);
-
-    // keyboard shortcuts
-    document.addEventListener("keyup", function (e) {
-      switch (e.keyCode) {
-        case 37:
-          testimLeftArrow.click();
-          break;
-
-        case 39:
-          testimRightArrow.click();
-          break;
-
-        case 39:
-          testimRightArrow.click();
-          break;
-
-        default:
-          break;
-      }
-    })
-
-    testim.addEventListener("touchstart", function (e) {
-      touchStartPos = e.changedTouches[0].clientX;
-    })
-
-    testim.addEventListener("touchend", function (e) {
-      touchEndPos = e.changedTouches[0].clientX;
-
-      touchPosDiff = touchStartPos - touchEndPos;
-
-      console.log(touchPosDiff);
-      console.log(touchStartPos);
-      console.log(touchEndPos);
-
-
-      if (touchPosDiff > 0 + ignoreTouch) {
-        testimLeftArrow.click();
-      } else if (touchPosDiff < 0 - ignoreTouch) {
-        testimRightArrow.click();
-      } else {
-        return;
-      }
-
-    })
-  }
-</script>
+  </script>
+  
 
 
 
@@ -566,8 +594,11 @@
   <!-- Custom JS -->
   <script src="z-assets/js/script.js"></script>
 
-
-
+  <script>
+   setTimeout(() => {
+      $('.sticky_contact').show();
+    }, 1000);
+  </script>
 
 </body>
 
