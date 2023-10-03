@@ -1628,20 +1628,13 @@ header {
 .modal-content {
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
-  height: 25vh ;
+  height: 15vh ;
 }
 
 #left_modal .modal-header .close {
   font-size: 50px !important; /* Adjust the font size as needed */
   padding: 10px !important;  /* Adjust the padding as needed */
   font-weight: 600;
-}
-@media only screen and (max-width: 600px) {
-  .modal-content {
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    height: 10vh ;
-  }
 }
 
 
