@@ -39,15 +39,18 @@
         <nav class="navbar navbar-dark navbar-expand-lg ">
           <a class="navbar-brand ml-5" href="index.html"><i style="font-size: 30px;">Patriot Sweep Nonstop</i></a>
 
-          <a class="navbar-brand ml-2" href="https://www.facebook.com/profile.php?id=100094956450038">
+          <div style="margin-left: 200px;">
+          <a class="navbar-brand" href="https://www.facebook.com/profile.php?id=100094956450038">
             <img src="images/messenger (1).png" style="height: 50px;width: 50px;">
           </a>
-          <a class="navbar-brand ml-2" href="">
+          <a class="navbar-brand ml-1" href="">
             <img src="images/whatasapp (1).png" style="height: 50px;width: 50px;" />
           </a>
-          <a class="navbar-brand ml-2" href="">
+          <a class="navbar-brand ml-1" href="">
             <img src="images/telegram (1).png" style="height: 50px;width: 50px;" />
           </a>
+        </div>
+
 
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
             aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span
@@ -388,7 +391,7 @@
   </section>
 
   <!-- Modal Window -->
-  <div class="modal modal-left fade" id="left_modal" tabindex="-1" role="dialog" aria-labelledby="left_modal">
+  <!-- <div class="modal modal-left fade" id="left_modal" tabindex="-1" role="dialog" aria-labelledby="left_modal">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -404,14 +407,52 @@
           <a href="https://t.me/Patriots_sweep"><img src="images/telegram (1).png" alt=""></a>
 
         </div>
-        <!-- <div class="modal-footer modal-footer-fixed">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div> -->
+      </div>
+    </div>
+  </div> -->
+
+  <div class="row contactpopup" style="position:fixed; bottom: 20px; z-index: 1; display: none;">
+    <div class="col-md-12">
+      <div style="background: white; height: 370px; width: 750px; border-radius: 20px; margin-left: 14%;" class="contact_us_sticky">
+        <div>
+          <a href="#" onclick="hidecontactpopup()">
+            <i style="float: right; margin-right: 35px; margin-top:20px;font-size: 35px; color: rgb(93, 77, 77);" class="fa fa-times"></i><br>
+          </a>
+          <span style="margin-left: 215px; font-size: 45px;"><b>Contact us on</b></span>
+        </div><hr>
+        <div style="margin-left: 35px;">
+          <a class="navbar-brand ml-2" href="https://www.facebook.com/profile.php?id=100094956450038">
+            <div class="messenger text-center" style="color:white; border-radius: 20px; height: 190px;width: 200px; background: linear-gradient(360deg, #F75280 0%, #5363FE 35%, rgba(0,212,255,1) 100%);">
+              <img src="images/messenger (1).png" style="height: 140px;width: 140px;"><br>
+              <span style="font-size:27px;">Messenger</span>
+            </div>
+          </a>
+          <a class="navbar-brand ml-2" href="https://wa.me/+19728631540">
+            <div class="whatasapp text-center" style="color:white; border-radius: 20px; height: 190px;width: 200px; background: linear-gradient(360deg, #19B435 0%, #44DD5F 35%, rgba(0,212,255,1) 100%);">
+              <img src="images/whatasapp (1).png" style="height: 140px;width: 140px;"><br>
+              <span style="font-size:27px;">WhatsApp</span>
+            </div>
+          </a>
+          <a class="navbar-brand ml-2" href="https://t.me/Patriots_sweep">
+            <div class="telegram text-center" style="color:white; border-radius: 20px; height: 190px;width: 200px; background: linear-gradient(360deg, #579ED6 0%, #64B5F6 35%, rgba(0,212,255,1) 100%);">
+              <img src="images/telegram (1).png" style="height: 140px;width: 140px;"><br>
+              <span style="font-size:27px;">Telegram</span>
+            </div>
+          </a>
+        </div>
+        <!-- <a class="navbar-brand ml-2" href="">
+          <div class="whatsapp">
+            <img src="images/whatasapp (1).png" style="height: 140px;width: 140px;"/><br>WhatsApp
+          </div>
+        </a>
+        <a class="navbar-brand ml-2" href="">
+          <div class="telegram">
+            <img src="images/telegram (1).png" style="height: 140px;width: 140px;"/><br>Telegram
+          </div>
+        </a> -->
       </div>
     </div>
   </div>
-
 
 
 
@@ -606,7 +647,8 @@
   </script>
   <script>
     setTimeout(function () {
-      $('#left_modal').modal();
+      $('.contactpopup').show()
+      // $('#left_modal').modal();
     }, 5000);
   </script>
 
@@ -617,9 +659,12 @@
   <script src="z-assets/js/script.js"></script>
 
   <script>
-    setTimeout(() => {
-      $('.sticky_contact').show();
-    }, 5000);
+    // setTimeout(() => {
+    //   $('.sticky_contact').show();
+    // }, 5000);
+    function hidecontactpopup(){
+      $('.contactpopup').hide();
+    }
   </script>
 
 </body>
