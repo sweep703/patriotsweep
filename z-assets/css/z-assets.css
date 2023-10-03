@@ -1619,7 +1619,6 @@ header {
   left: 0% !important;
   right: 0% !important;
   margin-bottom: 100px !important;
-  border-radius: 50%;
 }
 
 .modal.show .modal-dialog {
@@ -1629,7 +1628,8 @@ header {
 .modal-content {
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
-  height: 40vh !important;
+  height: 25vh ;
+
 
 }
 
@@ -1639,6 +1639,8 @@ header {
   font-weight: 600;
 
 }
+
+
 
 
 
