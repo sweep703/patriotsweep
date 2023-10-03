@@ -1630,6 +1630,6 @@ header {
 
 #left_modal .modal-header .close {
   font-size: 50px !important; /* Adjust the font size as needed */
-  padding: 10px; /* Adjust the padding as needed */
+  padding: 10px !important;  /* Adjust the padding as needed */
 }
 
