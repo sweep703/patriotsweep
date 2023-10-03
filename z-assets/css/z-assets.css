@@ -778,6 +778,10 @@ a {
   height: auto;
   background-repeat: no-repeat;
 }
+.contactpopup{
+  background-image: url("/images/wl.png");
+  object-fit: fill;
+}
 @media (max-width: 992px) {
   .hide {
     display: block;
