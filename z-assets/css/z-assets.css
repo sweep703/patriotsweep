@@ -1627,3 +1627,9 @@ header {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
+
+#left_modal .modal-header .close {
+  font-size: 50px !important; /* Adjust the font size as needed */
+  padding: 10px; /* Adjust the padding as needed */
+}
+
