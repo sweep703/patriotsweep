@@ -1633,3 +1633,11 @@ header {
   padding: 10px !important;  /* Adjust the padding as needed */
 }
 
+/* Add this CSS to your stylesheet */
+@media (max-width: 768px) {
+  #left_modal .modal-dialog {
+      width: 90%; /* Adjust the width as needed */
+      max-width: 90%; /* Adjust the max-width as needed */
+  }
+}
+
